@@ -27,7 +27,7 @@ def getIn():
     try:
         l3=tkinter.Label(window,text=short_url,fg="blue")
         l3.pack()
-        l3.bind("<Button-2>",lambda e:web(short_url))
+        l3.bind("<Button-2>",web(short_url))
     except ValueError:
         l4=tkinter.Label(window,text="Please Enter valid URL").pack()
 
